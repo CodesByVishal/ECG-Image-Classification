@@ -1,41 +1,44 @@
-### Detection of Cardiovascular Disease using ECG Images with Deep Learning Methods
+# Detection-of-Cardiovascular-Disease-using-ECG-Images-with-deepLearning-Methods
+# ABSTRACT
+Cardiovascular diseases (heart diseases) are the leading cause of death worldwide. The earlier they can be predicted and classified; the more lives can be saved. Electrocardiogram (ECG) is a common, inexpensive, and non-invasive tool for measuring the electrical activity of the heart and is used to detect cardiovascular disease. In this project, the power of deep learning techniques was used to predict the four major cardiac abnormalities: abnormal heartbeat, myocardial infarction, history of myocardial infarction, and normal person classes using the public ECG images dataset of cardiac patients.
+The aim is to improve early detection and classification of cardiovascular diseases, which are a leading cause of death globally. The project proposes a convolutional neural network (CNN) architecture for this purpose. The study compares the performance of the CNN model with existing works, getting superior results in terms of accuracy, recall, precision, and F1 score. Additionally, the CNN model is used for feature extraction in conjunction with traditional machine learning algorithms such as support vector machine, K-nearest neighbours, and logistic regression, with promising outcomes.
+Furthermore, utilization of XGBoost, an optimized distributed gradient boosting library, to enhance the predictive capabilities of the model. XGBoost is highlighted for its efficiency and scalability in training machine learning models, making it a valuable tool for ensemble learning and improving prediction accuracy.In this project, Streamlit, a popular open-source Python library for building interactive web applications, is integrated to create a user-friendly interface for interacting with the predictive model.
 
-#### Abstract
-Cardiovascular diseases (CVDs) are a leading global cause of mortality, emphasizing the critical need for early detection and classification. This project leverages deep learning techniques to predict major cardiac abnormalities—abnormal heartbeat, myocardial infarction (MI), history of MI, and normal classes—from a publicly available dataset of ECG images.
+# ***DATA SET LINK***
+ ECG images: https://data.mendeley.com/datasets/gwbz3fsgp8/2 
+ 
+The above dataset contains ECG image signals from both healthy individuals and persons with cardiovascular problems.
+The dataset contains 4 categories of ECG images:
+1.Normal Person ECG Images (284x12=3408)
+2. ECG Images of Myocardial Infarction Patients (240x12=2880)
+3. ECG Images of Patient that have abnormal heartbeat
+   (233x12=2796)
+4. ECG Images of Patient that have History of MI (172x12=2064).
+(Total Images of data set= 11,148)
 
-#### Key Features
-- Developed deep learning models achieving superior performance in accuracy, recall, precision, and F1 score compared to existing methods.
-- Integrated Streamlit for a user-friendly interface, facilitating real-time interaction with predictive models.
-- Utilized a dataset of 11,148 categorized ECG images to enhance early detection and classification of heart conditions.
 
-#### Technologies Used
-Colab, Streamlit, Localtunnel  
-Libraries: Skimage, matplotlib, NumPy, Scipy.nd_image, Pandas, SkLearn, joblib, XGBoost, Ensemble, Pickle  
+# ***PPT LINK****
+https://docs.google.com/presentation/d/1LKxGcEX3-kuShg6pnt5xnRDAgqEu6miZ/edit?usp=drive_link&ouid=109366818380983377600&rtpof=true&sd=true
 
-#### Machine Learning Algorithms
-1. K-Nearest Neighbour (KNN)
-2. Logistic Regression
-3. Support Vector Machine (SVM)
-4. XGBoost
-5. Voting Based Ensemble Classifier with GridSearchCV
+# **DEPLOYMENT LINKS**
+We have deployed our applicaiton in **RENDOR** cloud web service with **GITHUB** Repositary. 
 
-#### Dataset
-ECG images: [Dataset Link](https://data.mendeley.com/datasets/gwbz3fsgp8/2)  
-Categories:
-1. Normal Person ECG Images: 3408
-2. ECG Images of Myocardial Infarction Patients: 2880
-3. ECG Images of Patients with Abnormal Heartbeat: 2796
-4. ECG Images of Patients with History of MI: 2064
+https://github.com/Mandadi2002/Detection-of-Cardiovascular-Disease-using-ECG-Images-with-deepLearning-Methods.git
 
-#### Project Workflow
-- ECG images undergo preprocessing (e.g., rgb2gray, gaussian filtering, resizing) to extract relevant signals.
-- Contour techniques are used to isolate waves (P, QRS, T), converted into normalized 1D signals.
-- Models trained on preprocessed data for accurate classification and prediction.
-- Real-time feedback provided through an intuitive UI powered by Streamlit.
+https://major-project-2024-7.onrender.com/
 
-#### Conclusion
-The application of deep learning in ECG-based CVD detection signifies transformative potential for cardiac care, promising enhanced patient outcomes through early intervention.
+# **Approach**
+The user uploads an ECG image to our web app. Then, we use techniques like rgb2gray conversion, gaussian filtering, resizing, and thresholding to extract only the signals that do not have grid lines. The required waves (P, QRS, T) are then extracted using contour techniques and converted to a 1D signal. The normalized 1D signal is then fed into our pre-trained ML model, which is then analyzed. When the model has completed the analysis, it returns the results to the user based on the findings.
 
----
+Here, we have used 4 categories for image classification for our ECG images.
+Normal Person ECG Images
+Myocardial Infarction Patients
+Patient that have abnormal heartbeat
+Patient that have History of Myocardial Infarction
 
-This README provides an overview of the project, highlighting its objectives, methodologies, and technological implementations, aiming to support future development and collaboration in cardiovascular health research.
+One benefit of our app is that the user can view the entire workflow in the UI and receive real-time feedback.
+
+![Screenshot 2024-05-10 102634](https://github.com/Mandadi2002/Detection-of-Cardiovascular-Disease-using-ECG-Images-with-deepLearning-Methods/assets/123708991/de0888bb-cf13-4716-b531-579125089f6e)
+
+
+
