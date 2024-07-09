@@ -17,15 +17,7 @@ The dataset contains 4 categories of ECG images:
 (Total Images of data set= 11,148)
 
 
-# ***PPT LINK****
-https://docs.google.com/presentation/d/1LKxGcEX3-kuShg6pnt5xnRDAgqEu6miZ/edit?usp=drive_link&ouid=109366818380983377600&rtpof=true&sd=true
 
-# **DEPLOYMENT LINKS**
-We have deployed our applicaiton in **RENDOR** cloud web service with **GITHUB** Repositary. 
-
-https://github.com/Mandadi2002/Detection-of-Cardiovascular-Disease-using-ECG-Images-with-deepLearning-Methods.git
-
-https://major-project-2024-7.onrender.com/
 
 # **Approach**
 The user uploads an ECG image to our web app. Then, we use techniques like rgb2gray conversion, gaussian filtering, resizing, and thresholding to extract only the signals that do not have grid lines. The required waves (P, QRS, T) are then extracted using contour techniques and converted to a 1D signal. The normalized 1D signal is then fed into our pre-trained ML model, which is then analyzed. When the model has completed the analysis, it returns the results to the user based on the findings.
@@ -36,7 +28,7 @@ Myocardial Infarction Patients
 Patient that have abnormal heartbeat
 Patient that have History of Myocardial Infarction
 
-One benefit of our app is that the user can view the entire workflow in the UI and receive real-time feedback.
+
 
 ![Screenshot 2024-05-10 102634](https://github.com/Mandadi2002/Detection-of-Cardiovascular-Disease-using-ECG-Images-with-deepLearning-Methods/assets/123708991/de0888bb-cf13-4716-b531-579125089f6e)
 
