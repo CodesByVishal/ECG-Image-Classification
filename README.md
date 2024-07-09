@@ -30,7 +30,8 @@ Patient that have History of Myocardial Infarction
 
 
 
-![Screenshot 2024-05-10 102634](https://github.com/Mandadi2002/Detection-of-Cardiovascular-Disease-using-ECG-Images-with-deepLearning-Methods/assets/123708991/de0888bb-cf13-4716-b531-579125089f6e)
+
+![329467771-de0888bb-cf13-4716-b531-579125089f6e](https://github.com/CodesByVishal/ECG-Image-Classification/assets/163639829/f9f798e5-c549-4601-a4ff-6e34ef54b034)
 
 
 
